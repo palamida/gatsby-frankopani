@@ -1,0 +1,74 @@
+@import "./partials/_settings.css";
+
+.objekti {
+    margin: 4em auto;
+}
+.objekt {
+    @media (--tablet){
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        /* background-color: #ce2027; */
+        /* grid-template-rows: 300px; */
+    }
+
+}
+
+
+
+.objekt-slika {
+    position:relative;
+    align-self: start;
+    align-self: stretch;
+    background-color: #ce2027;
+}
+
+.objekt-rednibroj {
+    font-size: 2em;
+    font-weight:700;
+    color: #fff;
+    background-color: #ce2027;
+    position:absolute;
+    bottom:-10px;
+    left:20px;
+    padding:15px 20px 25px 20px;
+    @media (--tablet){
+        top:10px;
+        bottom:auto;
+        right:-10px;
+        left:auto;
+        padding:15px 30px 15px 20px;
+    }
+}
+
+/* parni objekti */
+.objekt:nth-of-type(2n) {
+    & .objekt-slika {
+        order: 2;
+        & .objekt-rednibroj {
+            @media (--tablet){
+            right:auto;
+            bottom:auto;
+            left:-10px;
+            padding:15px 20px 15px 30px;
+            }
+        }
+    }
+    & .objekt-opis {
+
+    }
+  }
+
+.objekt-opis {
+    position:relative;
+    padding: 10px 20px 10px 20px;
+    & h2,
+    & h3,
+    & h4 {
+        margin:0;
+    }
+}
+
+.objekt-opis-tekst {
+    margin-top: 10px;
+}

@@ -1,0 +1,204 @@
+@import "./partials/_settings.css";
+/* stylelint-disable */
+/* @import-normalize; */
+ /* stylelint-enable */
+ /* @import "partials/_form_reset.css"; */
+
+ html, body {
+     padding:0;
+     margin:0;
+ }
+
+ body {
+    background-color: #fff;
+    color: #333;
+    width:100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.5em;
+    font-weight:300;
+}
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width:100%;
+    height:auto;
+}
+
+header {
+    max-width:1200px;
+    margin:0 auto;
+}
+
+.header-image {
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction:column;
+  width:100%;
+  height:500px;
+  max-height: 50vh;
+  background-image: url(../images/frankopani-news1-header.jpg);
+  background-size: cover;
+  background-position: center center;
+  & h1 {
+      margin:0;
+      padding:15px;
+  }
+}
+
+.page-title {
+    color: rgba(255,255,255,0.9);
+    
+    /* font-size: 2em; */
+}
+.logotipi {
+  margin: 10px auto;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  max-width: 960px;
+}
+
+.logo{
+max-height:90px;
+}
+
+.logo-kvarner {
+    max-height: 120px;
+}
+
+.main {
+    max-width:980px;
+    margin:0 auto;
+    padding:10px;
+}
+
+footer {
+    background: var(--crvena) url(../images/pasica-ikone-bijeli-trans.png) center 10px repeat-x;
+    font-size: 0.9em;
+    margin-top:30px;
+    padding-top:70px;
+}
+
+.footer-content {
+    background: var(--crvena);
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items:center;
+    padding: 20px 0;
+    & :--links {
+        color: #fff;
+        text-decoration:none;
+    }
+    & section {
+        flex: 0 1 680px;
+        padding:10px;
+        @media (--large){
+            max-width:480px;
+        }
+    }
+}
+.footer-mailchimp {
+    @media (--large){
+        border:1px dotted #fff;
+        border-radius: 2px;
+    }
+   
+    padding:10px;
+    text-align: center;
+}
+
+
+.footer-contacs {
+    text-align:center;
+    @media (--large){
+        text-align:right;
+    }
+}
+
+.footer-social {
+
+}
+
+.footer-links {
+    background-color: #fff;
+    padding:20px;
+    display: flex;
+    justify-content: center;
+    @media (--large){
+        justify-content: flex-end;
+    }
+    
+    align-content: center;
+    & .logo-kvarner {
+        max-height:80px;
+        max-width:200px;
+        margin: 5px 10px;
+    }
+    & .logo-pgz {
+        max-height:80px;
+        max-width:200px;
+        margin: 5px 10px;
+    }
+}
+
+
+
+
+
+label {
+    font-size: 0.8em;
+    margin-right: 10px;
+}
+
+input[type="email"]{
+    border:0;
+    width:300px;
+    border-block-style: none;
+    padding:8px 5px;
+    background-color: #b00;
+    color: #f00;
+    &:focus {
+        color: #fff;
+        outline: 1px dotted #fff;
+    }
+}
+
+input[type="submit"]{
+    font-size: 1em;
+    margin: 10px auto;
+    padding: 8px 10px;
+    background-color: #977;
+    color: #fff;
+    border: 1px solid #b00;
+    border-radius: 2px;
+    &:hover {
+        transition: all 0.2s linear;
+        background-color: #755;
+    }
+}
+
+.mapa-wrapper {
+    text-align:center;
+}
+.slika-mapa {
+    width:100%;
+    max-width:680px;
+}
+
+.slike-galerija {
+    margin: 20px -10px;
+    width:auto;
+    display: flex;
+    flex-wrap: wrap;
+    & .galerija-slika {
+        margin:10px;
+        flex: 1 1 320px;
+    }
+}
