@@ -5,7 +5,7 @@ import { Link } from "gatsby"
 // import emailList from './emailList'
 // import styled from 'styled-components'
 
-import logoKvarner from '../images/logo-kvarner-eng.png'
+import logoKvarner from '../images/logo-kvarner-de.png'
 import logoPGZ from '../images/logo-pgz.png'
 import logoFrankopaniTrans from '../images/frankopani-logo-bijeli-trans.png'
 
@@ -82,7 +82,7 @@ export default function footer() {
 </section>
 
 <section className="footer-links">
-    <a href="http://www.kvarner.hr"><img className="logo-kvarner" src={logoKvarner} alt="Logo TZ Kvarner" /></a>
+    <a href="http://www.kvarner.hr/deu/tourismus"><img className="logo-kvarner" src={logoKvarner} alt="Tourismusverbandes der Region Kvarner" /></a>
     <a href="https://www.pgz.hr"><img className="logo-pgz" src={logoPGZ} alt="Logo Primorsko-goranska županija" /></a>
 </section>
 </footer>

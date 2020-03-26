@@ -5,7 +5,7 @@ import { Link } from "gatsby"
 // import emailList from './emailList'
 // import styled from 'styled-components'
 
-import logoKvarner from '../images/logo-kvarner-eng.png'
+import logoKvarner from '../images/logo-kvarner-ita.png'
 import logoPGZ from '../images/logo-pgz.png'
 import logoFrankopaniTrans from '../images/frankopani-logo-bijeli-trans.png'
 
@@ -41,7 +41,7 @@ function EmailListForm(props) {
   <div id="mc_embed_signup_scroll">
   
 <div className="mc-field-group">
-  <label htmlFor="mce-EMAIL">Email Address </label>
+  <label htmlFor="mce-EMAIL">Indirizzo e-mail </label>
   <input type="email" value={emailadresa} onChange={handleEmailChange} name="EMAIL" onFocus={onFocusHandler} className="required email" placeholder="e-mail adresa" id="mce-EMAIL" />
 </div>
   <div id="mce-responses" className="clear">
@@ -50,7 +50,7 @@ function EmailListForm(props) {
   </div>   
    {/* <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups--> */}
     <div style={{ position:"absolute",left:"-5000px"}} aria-hidden="true"><input type="text" name="b_e691cad92062cdb7842472a4f_5a735664c0" tabIndex="-1" onChange={handleDumpChange} value="" /></div>
-    <div className="clear"><input type="submit" value="Prijavi se" name="subscribe" id="mc-embedded-subscribe" className="button" /></div>
+    <div className="clear"><input type="submit" value="Iscriviti" name="subscribe" id="mc-embedded-subscribe" className="button" /></div>
     </div>
 </form>
 </div>
@@ -77,13 +77,13 @@ export default function footer() {
 <EmailListForm/>
 {/* <!--End mc_embed_signup--> */}
 </section>
-    <section className="footer-contacs"><a href="http://www.frankopani.eu"><img className="logo-frankopani" src={logoFrankopaniTrans} alt="Logo Putovima Frankopana" /></a><p>Kulturno-turistička ruta „Putovima Frankopana“<br/><a href="http://www.frankopani.eu">www.frankopani.eu</a></p><p><Link to="/">Objavljeni newsletteri...</Link></p></section>
+    <section className="footer-contacs"><a href="http://www.frankopani.eu"><img className="logo-frankopani" src={logoFrankopaniTrans} alt="Logo Putovima Frankopana" /></a><p>Il percorso culturale „Putovima Frankopana“ <br/>(I percorsi dei Frankopani)<br/><a href="http://www.frankopani.eu">www.frankopani.eu</a></p><p><Link to="/">I newsletter pubblicati...</Link></p></section>
 
 </section>
 
 <section className="footer-links">
-    <a href="http://www.kvarner.hr"><img className="logo-kvarner" src={logoKvarner} alt="Logo TZ Kvarner" /></a>
-    <a href="https://www.pgz.hr"><img className="logo-pgz" src={logoPGZ} alt="Logo Primorsko-goranska županija" /></a>
+    <a href="http://www.kvarner.hr/it/turismo"><img className="logo-kvarner" src={logoKvarner} alt="Logo ente turistico del Quarenro" /></a>
+    <a href="https://www.pgz.hr"><img className="logo-pgz" src={logoPGZ} alt="Logo contea litoraneo-montana" /></a>
 </section>
 </footer>
   )

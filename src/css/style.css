@@ -201,4 +201,53 @@ input[type="submit"]{
         margin:10px;
         flex: 1 1 320px;
     }
+    & .galerija-slika-normal {
+        margin:10px;
+        flex: 0 1 320px;
+    }
+}
+
+.galerija-centrirano{
+    align-items: center;
+    justify-content: center;
+}
+
+.download-brochure {
+    & a {
+        margin:30px auto;
+        max-height:30vh;
+        height:auto;
+        width: 200px;
+        display:block;
+        & > span {
+        border: 10px solid #eee;
+        border-radius: 6px;
+        transition: all 0.2s ease-in-out;
+        }
+        &:hover {
+            & > span {
+            transform: rotateZ(11deg);
+            }
+            &:after {
+                width:80%;
+                box-shadow: 15px 20px 12px 6px rgba(0,0,0,0.65);
+            }
+        }
+        &:after {
+            content: '';
+            height: 1px;
+            width: 100%;
+            box-shadow: 0px 20px 13px 6px rgba(0,0,0,0.65);
+            transition: all 0.2s ease-in-out;
+            /* box-shadow: 5px 20px 12px -4px rgba(0,0,0,0.55); */
+            display: block;
+            border-radius: 100%;
+        }
+    }
+}
+
+.simboli {
+    width: 500px;
+    max-width:80%;
+    margin: 140px auto;
 }

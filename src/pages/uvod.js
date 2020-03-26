@@ -40,28 +40,29 @@ export default ({data}) =>
 
 
 export const query = graphql`
-{
-  objektiuvod: allMarkdownRemark (sort: {order: ASC, fields: frontmatter___rednibroj}) {
-    edges {
-      node {
-        frontmatter {
-          path
-          title
-          podnaslov
-          rednibroj
-          previewSlika {
-            childImageSharp {
-              fluid(sizes: "960px") {
-                ...GatsbyImageSharpFluid
-                src
+
+  {
+    objektiuvod: allMarkdownRemark(filter: {fileAbsolutePath: {regex: "\/markdown-segments/"}}, sort: {fields: [frontmatter___rednibroj], order: ASC}) {
+      edges {
+        node {
+          frontmatter {
+            path
+            podnaslov
+            rednibroj
+            title
+            previewSlika {
+              childImageSharp {
+                fluid(sizes: "960px") {
+                  ...GatsbyImageSharpFluid
+                  src
+                }
               }
             }
           }
+          html
         }
-        html
       }
     }
-  }
     slikeuvod: allFile(filter: {sourceInstanceName: {eq: "images"}, relativeDirectory: {eq: "uvod"}}) {
       edges {
         node {

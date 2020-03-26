@@ -14,7 +14,10 @@ export default () => (
 <Layout title="Putovima Frankopana" headerImage={HeaderPic}>
     <h3>Objavljeni newsletteri:</h3>
     <ul>
-        <ListLink to="/uvod/">01 upoznajte projekt</ListLink>
+        <ListLink to="/uvod/">Upoznajte projekt</ListLink>
+        <ListLink to="/putovanje-u-potrazi-za-frankopanima/">Putovanje u potrazi za Frankopanima</ListLink>
+        <ListLink to="/scoprite-il-quarnaro/">Scoprite il Quarnaro</ListLink>
+        <ListLink to="/lernen-sie-den-kvarner-kennen/">Lernen Sie den Kvarner kennen</ListLink>
       </ul>
     </Layout>
 )
